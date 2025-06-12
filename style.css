@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5; /* light pink */
+  color: #333;
+}
+
+.top-bar {
+  background-color: #ffe6f0; /* Soft pink */
+  padding: 10px 20px; /* Reduced height */
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  position: sticky;
+  top: 0;
+  z-index: 1000;}
+.product-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 20px;
+}
+
+.product-img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.order-btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: #c1e1c1; /* light green */
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: #a8d5a8;
+}.ingredients-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff0f5; /* Light pink */
+}
+
+.ingredients-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.ingredients-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.ingredient-box {
+  background-color: #fefefe;
+  border: 2px solid #ffddee;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.ingredient-box h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #e75480;
+}
+
+.ingredient-box p {
+  color: #666;
+}.how-to-use-section {
+  padding: 40px 20px;
+  background-color: #e6f7f2; /* Light greenish background */
+  text-align: center;
+}
+
+.how-to-use-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.use-box {
+  background-color: #ffffff;
+  border: 2px solid #b3e6d6;
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.use-box p {
+  margin: 12px 0;
+  font-size: 16px;
+  color: #555;
+}.order-section {
+  padding: 40px 20px;
+  background-color: #fff2f4; /* Soft pink */
+  text-align: center;
+}
+
+.order-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.order-box {
+  background-color: #fff;
+  border: 2px solid #f7c6d1;
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #25D366;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5b;
+}.contact-section {
+  background-color: #e9fce9; /* light green background */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.contact-box {
+  background-color: #fff;
+  border: 2px solid #b7e4c7;
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contact-box p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+html {
+  scroll-behavior: smooth;
+}
+@media (max-width: 768px) {
+  .navbar h1 {
+    font-size: 20px;
+  }
+
+  .product-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-image {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .product-description h2 {
+    font-size: 20px;
+  }
+
+  .ingredients-container,
+  .how-to-use-box,
+  .order-box,
+  .contact-box {
+    width: 90%;
+  }
+
+  .ingredient {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .how-to-use-box li {
+    font-size: 14px;
+  }
+
+  .order-box h2,
+  .contact-section h2 {
+    font-size: 22px;
+  }
+
+  .order-box p,
+  .contact-box p {
+    font-size: 14px;
+  }
+}
