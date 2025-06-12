@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" type="image/png" href="D:\samaura-site\logo2.png">
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SamAura</title>
@@ -9,13 +11,15 @@
 <body>
 
 <header class="top-bar">
+  <img src="D:\samaura-site\logo3.png.png" alt="Logo" class="logo">
   <h1>Welcome to SamAura!</h1>
 </header>
 
 
+
 <section class="product-section">
   <img src="https://i.postimg.cc/W4nP3fdq/product-jpg.png" alt="SamAura Beauty Powder" class="product-img">
-  <a href="#order" class="order-btn">Order Now</a>
+  <a href="#order" class="order-btn">coming soon</a>
 </section>
 <section class="ingredients-section">
   <h2>Ingredients & Benefits</h2>
@@ -62,6 +66,21 @@
     <p><strong>TikTok:</strong> @yourtiktok</p>
   </div>
 </section>
+<!-- Discount Pop-up Button -->
+<div id="discount-popup">
+  <button onclick="togglePopup()">🎁 Additional Discount</button>
+  <div id="popup-message">
+    <p>🎉 With your order, you’ll receive a special discount card!</p>
+    <p>Use it on your next purchase. Discount amount varies based on your luck 🍀</p>
+    <button onclick="togglePopup()">Close</button>
+  </div>
+</div>
+<script>
+  function togglePopup() {
+    const popup = document.getElementById("popup-message");
+    popup.style.display = popup.style.display === "block" ? "none" : "block";
+  }
+</script>
 
 </body>
 </html>
